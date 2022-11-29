@@ -3,19 +3,29 @@ package com.cc.java;
 public class App {
     
     public static void main(String[] args) {
-     
-    }
+        HoneyBee w = new Worker();
+        HoneyBee d = new Drone();
+        HoneyBee q = new Queen();
+        HoneyBee s = new Security();
 
-    public static void o( String o ) { System.out.println( o ); }
-    public static String c( String c ) {
-        switch ( c ) {
-            case "#r": return "\u001b[31m";
-            case "#g": return "\u001b[32m";
-            case "#y": return "\u001b[33m";
-            case "#b": return "\u001b[34m";
-            case "#p": return "\u001b[35m";
-            case "#c": return "\u001b[36m";
-            default: return "\u001b[0m";
-        }
+        Out.o( Out.c( "#y" ) + Out.l() );
+        Out.o( Out.c( "#y" ) + Out.l( "Bees" ) );
+            Out.o( Out.t( 1 ) + d.j() );
+            Out.o( Out.t( 1 ) + w.j() );
+            Out.o( Out.t( 1 ) + s.j() );
+            Out.o( Out.t( 1 ) + q.j() );
+    
+        Out.o( Out.n() + Out.c( "#y" ) + Out.l() );
+        Out.o( Out.c( "#y" ) + Out.l( "Can u fly?" ) );
+            Out.o( Out.t( 1 ) + d.f() );
+            Out.o( Out.t( 1 ) + w.f() );
+            Out.o( Out.t( 1 ) + s.f() );
+            Out.o( Out.t( 1 ) + q.f() );
+
+        Out.o( Out.n() + Out.c( "#y" ) + Out.l() );
+        Out.o( Out.c( "#y" ) + Out.l( "Test" ) );
+            HoneyBee b = new HoneyBee();
+            Out.o( Out.t( 1 ) + b.j() );
+            Out.o( Out.t( 1 ) + b.f() );
     }
 }
