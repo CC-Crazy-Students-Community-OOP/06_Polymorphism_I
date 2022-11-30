@@ -23,9 +23,12 @@ public class App {
             Out.o( Out.t( 1 ) + q.f() );
 
         Out.o( Out.n() + Out.c( "#y" ) + Out.l() );
-        Out.o( Out.c( "#y" ) + Out.l( "Test" ) );
+        Out.o( Out.c( "#y" ) + Out.l( "Test - sollte nicht gehen" ) );
             HoneyBee b = new HoneyBee();
             Out.o( Out.t( 1 ) + b.j() );
             Out.o( Out.t( 1 ) + b.f() );
+        
+        Out.o( Out.n() + Out.c( "#y" ) + Out.l( "end of line" ) );
+
     }
 }
